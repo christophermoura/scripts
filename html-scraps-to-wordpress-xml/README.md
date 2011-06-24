@@ -1,4 +1,3 @@
-html-scraps-to-wordpress-xml README
 
 
 Converte os comentários do script http://aurelio.net/bin/php/scraps.phps para o formato do WordPress (WXR).
