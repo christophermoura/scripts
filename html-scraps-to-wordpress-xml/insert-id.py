@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding: utf-8
 # 2011-03-30 http://aurelio.net
 #
 # Script complementar ao recados2wordpress.sh.
