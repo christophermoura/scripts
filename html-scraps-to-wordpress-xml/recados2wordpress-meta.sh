@@ -131,14 +131,14 @@ s|^<dt>\(....-..-..\) <b title="\([^"]*\)">\(.*\)</b>  *(\(.*\) - \(.*\))</dt><d
 <wp:comment_approved>1</wp:comment_approved>\
 <wp:comment_type></wp:comment_type>\
 <wp:comment_parent>0</wp:comment_parent>\
-<wp:comment_meta>\
-	<wp:c_meta_key>zzcidade</wp:c_meta_key>\
-	<wp:c_meta_value><![CDATA[\4]]></wp:c_meta_value>\
-</wp:comment_meta>\
-<wp:comment_meta>\
-	<wp:c_meta_key>zzestado</wp:c_meta_key>\
-	<wp:c_meta_value><![CDATA[\5]]></wp:c_meta_value>\
-</wp:comment_meta>|p
+<wp:commentmeta>\
+	<wp:meta_key>zzcidade</wp:meta_key>\
+	<wp:meta_value><![CDATA[\4]]></wp:meta_value>\
+</wp:commentmeta>\
+<wp:commentmeta>\
+	<wp:meta_key>zzestado</wp:meta_key>\
+	<wp:meta_value><![CDATA[\5]]></wp:meta_value>\
+</wp:commentmeta>|p
 
 # <wp:comment_user_id>0</wp:comment_user_id>
 
