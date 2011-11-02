@@ -18,7 +18,6 @@ Para:
 <wp:comment_author_url></wp:comment_author_url>
 <wp:comment_author_IP></wp:comment_author_IP>
 <wp:comment_date>2005-05-23 12:00:00</wp:comment_date>
-<wp:comment_date_gmt>2005-05-23 12:00:00</wp:comment_date_gmt>
 <wp:comment_approved>1</wp:comment_approved>
 <wp:comment_type></wp:comment_type>
 <wp:comment_parent>0</wp:comment_parent>
@@ -49,12 +48,12 @@ Script principal, veja instruções no cabeçalho. Coloca os campos Cidade e Est
 Script principal modificado para colocar Cidade e Estado em campos especiais zzcidade e zzestado dentro da tag <wp:comment_meta>, exemplo:
 
 ```
-<wp:comment_meta>
-	<wp:c_meta_key>zzcidade</wp:c_meta_key>
-	<wp:c_meta_value><![CDATA[Curitiba]]></wp:c_meta_value>
-</wp:comment_meta>
-<wp:comment_meta>
-	<wp:c_meta_key>zzestado</wp:c_meta_key>
-	<wp:c_meta_value><![CDATA[PR]]></wp:c_meta_value>
-</wp:comment_meta>
+<wp:commentmeta>
+	<wp:meta_key>zzcidade</wp:meta_key>
+	<wp:meta_value><![CDATA[Curitiba]]></wp:meta_value>
+</wp:commentmeta>
+<wp:commentmeta>
+	<wp:meta_key>zzestado</wp:meta_key>
+	<wp:meta_value><![CDATA[PR]]></wp:meta_value>
+</wp:commentmeta>
 ```
