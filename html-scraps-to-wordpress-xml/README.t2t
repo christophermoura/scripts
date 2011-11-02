@@ -64,3 +64,18 @@ Script principal, que converte para o formato do WorPress. Ele funciona com a ve
 	<wp:meta_value><![CDATA[PR]]></wp:meta_value>
 </wp:commentmeta>
 ```
+
+= cidades.sh =
+
+Ferramenta meramente informativa. Compõe uma lista com as cidades e estados dos comentários do arquivo XML, ficando fácil encontrar erros de digitação. Exemplo:
+
+```
+Abaetetuba                              PA
+Acrelandia                              AC
+Agua boa                                MT
+Aguas lindas                            GO
+Alto Araguaia                           MT
+Alvorada                                RS
+```
+
+Veja mais detalhes sobre o funcionamento deste script neste vídeo: http://aurelio.net/blog/2011/04/19/o-jeito-shell-script-de-resolver-problemas/
