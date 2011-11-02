@@ -16,8 +16,8 @@
 #     Ferramentas > Importar > WordPress
 #
 # Ele vai reclamar que não encontrou o autor do post, pode ignorar e mandar
-# prosseguir. Será criado um post *privado* com o nome que você definiu em
-# $PAGE_NAME e nele estarão atrelados todos os comentários. Se você quiser
+# prosseguir. Será criado um post (ou página) com o nome que você definiu em
+# $POST_NAME e nele estarão atrelados todos os comentários. Se você quiser
 # mover todos ou somente alguns comentários para outro post ou página, use
 # o plugin http://wordpress.org/extend/plugins/move-comments/
 #
@@ -44,7 +44,10 @@
 
 
 
-PAGE_NAME="A1"
+POST_TYPE="page"         # page, post
+POST_STATUS="private"    # private, public
+POST_NAME="A3"
+
 
 cat <<EOS
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -78,12 +81,10 @@ cat <<EOS
 	<wp:wxr_version>1.1</wp:wxr_version>
 
 	<item>
-		<title>$PAGE_NAME</title>
+		<title>$POST_NAME</title>
 		<wp:comment_status>open</wp:comment_status>
-<!--		<wp:status>private</wp:status> -->
-<!--		<wp:post_type>page</wp:post_type> -->
-		<wp:status>public</wp:status>
-		<wp:post_type>post</wp:post_type>
+		<wp:post_type>$POST_TYPE</wp:post_type>
+		<wp:status>$POST_STATUS</wp:status>
 
 EOS
 
