@@ -35,7 +35,6 @@
 # <wp:comment_author_url></wp:comment_author_url>
 # <wp:comment_author_IP></wp:comment_author_IP>
 # <wp:comment_date>2005-05-23 12:00:00</wp:comment_date>
-# <wp:comment_date_gmt>2005-05-23 12:00:00</wp:comment_date_gmt>
 # <wp:comment_approved>1</wp:comment_approved>
 # <wp:comment_type></wp:comment_type>
 # <wp:comment_parent>0</wp:comment_parent>
@@ -129,7 +128,6 @@ s|^<dt>\(....-..-..\) <b title="\([^"]*\)">\(.*\)</b>  *(\(.*\) - \(.*\))</dt><d
 <wp:comment_author_url></wp:comment_author_url>\
 <wp:comment_author_IP></wp:comment_author_IP>\
 <wp:comment_date>\1 12:00:00</wp:comment_date>\
-<wp:comment_date_gmt>\1 12:00:00</wp:comment_date_gmt>\
 <wp:comment_approved>1</wp:comment_approved>\
 <wp:comment_type></wp:comment_type>\
 <wp:comment_parent>0</wp:comment_parent>\
