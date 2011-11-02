@@ -1,7 +1,7 @@
 #!/bin/bash
 # 2010-11-04 http://aurelio.net
 #
-# Uso: cat arquivo.html | ./recados2wordpress.sh | ./insert-id.py > arquivo.xml
+# Uso: cat arquivo.html | ./recados2wordpress.sh | ./insert-id.py | ./unique-timestamp.py > arquivo.xml
 #
 # Converte os comentários do script http://aurelio.net/bin/php/scraps.phps
 # para o formato do WordPress (WXR).
@@ -11,6 +11,13 @@
 # necessário para que o WordPress inclua todos os comentários, senão ele irá
 # incluir somente o último. Não se preocupe, este número ID não é usado pelo
 # WP, será atribuído um novo ID automaticamente durante a importação.
+#
+# É também necessário passar o XML pelo unique-timestamp.py, para garantir
+# uma data/hora exclusiva para cada comentário. Como o script PHP original
+# dos recados guardava apenas o dia e não a hora, todos os comentários aqui
+# ficam com o horário 12:00:00. Se houver mais de um comentário no mesmo
+# dia, o script muda os segundos de cada um deles, para diferenciar e manter
+# assim a sua ordem original.
 #
 # Para importar o arquivo XML no WordPress, acesse:
 #     Ferramentas > Importar > WordPress
