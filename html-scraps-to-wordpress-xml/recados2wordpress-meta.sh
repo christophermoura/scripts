@@ -9,8 +9,10 @@
 # É necessário ainda passar o XML resultante pelo insert-id.py, para que cada
 # comentário ganhe um número ID próprio na tag <wp:comment_id>. Isso é
 # necessário para que o WordPress inclua todos os comentários, senão ele irá
-# incluir somente o último. Não se preocupe, este número ID não é usado pelo
-# WP, será atribuído um novo ID automaticamente durante a importação.
+# incluir somente o último. Será atribuído um novo ID automaticamente durante
+# a importação. Porém, é importante que a ordem dos comentários seja mantida.
+# Então, se os comentários mais recentes aparecem primeiro, ligue a variável
+# 'reverse' no insert-id.py.
 #
 # É também necessário passar o XML pelo unique-timestamp.py, para garantir
 # uma data/hora exclusiva para cada comentário. Como o script PHP original
