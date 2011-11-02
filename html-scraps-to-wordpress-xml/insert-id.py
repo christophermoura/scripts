@@ -18,12 +18,24 @@
 import sys
 import re
 
-text = sys.stdin.read()
+# Recent comments come first?
+reverse = True
 
-count = 1
-while re.search(r'(?s)\n<wp:comment_id></wp:comment_id>\n', text):
-    text = re.sub(r'(?s)^(.*?\n<wp:comment_id)>(</wp:comment_id>\n)', r'\1>'+str(count)+r'\2', text)
-    count += 1
+text = sys.stdin.read()
+regex = re.compile(r'(\n<wp:comment_id)>(</wp:comment_id>\n)')
+
+if reverse:
+    count = len(regex.findall(text))  # how many occurences?
+else:
+    count = 1
+
+# Replace every occurence, one by one, increasing/decresing count
+while regex.search(text):
+    text = regex.sub(r'\1>' + str(count) + r'\2', text, 1)
+    if reverse:
+        count -= 1
+    else:
+        count += 1
 
 sys.stdout.write(text)
 
