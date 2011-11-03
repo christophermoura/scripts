@@ -30,6 +30,14 @@ Uso:
 
 Leia mais informações no cabeçalho do script principal: recados2wordpress-meta.sh
 
+= AVISO IMPORTANTE =
+
+Na versão mais recente deste script eu removi a tag ``<wp:comment_date_gmt>`` do XML, pois ela tinha o mesmo valor que a ``<wp:comment_date>`` e julguei que seria desnecessária. Mas eu estava errado, pois sem ela a ordenação dos comentários no dashboard fica confusa.
+
+Enquanto eu não atualizo os scripts, há um remendo rápido que resolve este problema. Após importar o XML com os comentários em seu WordPress, entre no banco de dados e execute o seguinte comando SQL:
+
+``` UPDATE `wp_comments` SET `comment_date_gmt` = `comment_date` WHERE `comment_date_gmt` = 0;
+
 = insert-id.py =
 
 Script auxiliar para numerar cada comentário no XML final.
